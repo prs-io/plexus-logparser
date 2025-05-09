@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/prs-io/logparser"
+	logparser "github.com/prs-io/plexus-logparser"
 )
 
 func main() {

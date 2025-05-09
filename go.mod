@@ -1,4 +1,4 @@
-module github.com/prs-io/logparser
+module github.com/prs-io/plexus-logparser
 
 go 1.21
 
