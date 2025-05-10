@@ -61,6 +61,23 @@ func LevelByPriority(priority string) Level {
 	return LevelUnknown
 }
 
+func LevelFromString(s string) Level {
+	switch strings.ToLower(s) {
+	case "critical":
+		return LevelCritical
+	case "error":
+		return LevelError
+	case "warning":
+		return LevelWarning
+	case "info":
+		return LevelInfo
+	case "debug":
+		return LevelDebug
+	default:
+		return LevelUnknown
+	}
+}
+
 func GuessLevel(line string) Level {
 	if len(line) > maxLineLenForGuessingLevel {
 		line = line[:maxLineLenForGuessingLevel]
